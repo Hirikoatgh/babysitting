@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    
+    header {
+    background-color: #ccc;
+}
+
+nav {
+    height: 48px;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 69px;
+    height: 100%;
+    width: 10%;
+}
+
+nav li a {
+    font-family: cursive;
+    color: #ff1e4b;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #dd5771;
+}
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ 
+        #navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 40px;
+            background-color: rgb(61, 59, 59);
+        }
+ 
+        #navbar img {
+            width: 40px;
+            height: 40px;
+        }
+        .month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #FF7F50;
+}
+
+.month ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 15px;
+}
+
+.month .next {
+    float: right;
+    padding-top: 15px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.1%;
+    color: #666;
+    text-align: center;
+    margin-bottom: 4px; 
+}
+
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.1%;
+    text-align: center;
+    margin-bottom: 4px;
+    font-size:12px;
+    color:#777;
+}
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+}
+
+@media screen and (max-width:1487px) {
+    .weekdays li, .days li {width:13.5%;}
+}
+
+
+@media screen and (max-width: 597px) {
+    .weekdays li, .days li {width:13.1%;}
+}
+
+@media screen and (max-width: 427px) {
+    .weekdays li, .days li {width:13%;}
+}
+@media screen and (max-width: 390px) {
+    .weekdays li, .days li {width:12.5%;}
+}
+ul {list-style-type: none;}
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar</title>
+</head>
+<body>
+  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<br>
+<nav class="nav" style="background-color: #e3f2fd; shape-image-threshold: stadium; width: auto; height: 100px; border: 2px solid #000; border-radius: 10px;padding: 20px;">
+  <nav class="navbar navbar-expand-lg bg-body-">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Home.html"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Home.html"> <img src="Logo .png" width="70px" height="70px"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Home.html">Home</a>
+          </li>
+          <br>
+          <a class="nav-link" href="Aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Calendar.html">Schedule</a>
+        </li><br>
+        <li class="nav-item">
+          <a class="nav-link" href="email.html">Email us</a>
+        </li><br>
+        <li class="nav-item">
+          <a class="nav-link" href="Call.html">Call us</a>
+        </li>
+      </ul>
+        </form>
+      </div>
+    </div>
+  </nav>
+</nav>
+<div class="month">      
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li style="text-align:center">
+      July<br>
+      <span style="font-size:18px">2024</span>
+    </li>
+  </ul>
+</div>
+
+<ul class="weekdays">
+  <li>Mo</li>
+  <li>Tu</li>
+  <li>We</li>
+  <li>Th</li>
+  <li>Fr</li>
+  <li>Sa</li>
+  <li>Su</li>
+</ul>
+
+<ul class="days">  
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+  <li>9</li>
+  <li><span class="active">10</span></li>
+  <li style="color: red;">NA</li>
+  <li>12</li>
+  <li>13</li>
+  <li>14</li>
+  <li>15</li>
+  <li>16</li>
+  <li>17</li>
+  <li>18</li>
+  <li>19</li>
+  <li>20</li>
+  <li>21</li>
+  <li>22</li>
+  <li>23</li>
+  <li>24</li>
+  <li>25</li>
+  <li>26</li>
+  <li>27</li>
+  <li>28</li>
+  <li>29</li>
+  <li>30</li>
+  <li>31</li>
+</ul>
+<br>
+<h2 style="text-align: center;">Hello and welcome to our calendar page!</h2>
+<h3>How to use:</h3>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Eo_circle_blue_number-1.svg" width="100px" height="100px">
+<h4 style="margin-top: -75px; text-align: center;">Step #1</h4>
+</body>
+</html>
